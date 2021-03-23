@@ -8,7 +8,7 @@ formConversao.addEventListener('submit', (evento) =>{
 })
 
 function converteMoedas(valor){
-    const url = fetch( 'http://economia.awesomeapi.com.br/json/all')
+    const url = fetch( 'https://economia.awesomeapi.com.br/json/all')
         .then( moedas => moedas.json())
         .then( moedas => {
               pesquisaValores(moedas, valor)
