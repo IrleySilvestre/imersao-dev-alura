@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <title>Conversor de Moedas</title>
+</head>
+<body>
+<header>
+    <div class="container-header">
+            <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-conversor-de-moedas.svg"
+                 class="page-logo" alt="">
+            <a href="https://alura.com.br/" target="_blank">
+                <img src="https://www.alura.com.br/assets/img/home/alura-logo.svg" alt="" class="alura-logo">
+            </a>
+    </div>
+</header>
+<main>
+        <div class="container-cotacao">
+            <form data-form="form-conversao">
+                <div class="input-container">
+                    <labe class="input-label" for="valor">Digite o valor em Reais a ser convertido:</labe>
+                    <input name="valor" placeholder="R$ 0,00" data-tipo="valor" type="text" class="input" required>
+                    <span class="input-mensagem-err"></span>
+                    <button data-tipo="btnConverter" class="button" type="submit">Converter</button>
+                </div>
+            </form>
+            <p data-tipo="dataCotacao" class="input-container"></p>
+
+            <dl>
+                <dt class="titulo-cotacao">Dólar Comercial - USD <span data-tipo="valorConvertido" class="valo-confertido"></span> </dt>
+                <table class="table-valores" >
+                    <tr class="cabecalho-tabela">
+                        <th class="linha-tabela">Venda</th>
+                        <th class="linha-tabela">Compra</th>
+                        <th class="linha-tabela">Maximo</th>
+                        <th class="linha-tabela">Minimo</th>
+                    </tr>
+<!--                    <tr class="cabecalho-tabela">-->
+<!--                        <td class="linha-tabela">R$4,50</td>-->
+<!--                        <td class="linha-tabela">R$5,50</td>-->
+<!--                        <td class="linha-tabela">R$5,99</td>-->
+<!--                        <td class="linha-tabela">R$4,99</td>-->
+<!--                    </tr>-->
+
+                </table>
+
+<!--                <dt class="titulo-cotacao">Dólar Turismo - USD </dt>-->
+<!--                <table class="table-valores" >-->
+<!--                    <tr class="cabecalho-tabela">-->
+<!--                        <th class="linha-tabela">Venda</th>-->
+<!--                        <th class="linha-tabela">Compra</th>-->
+<!--                        <th class="linha-tabela">Maximo</th>-->
+<!--                        <th class="linha-tabela">Minimo</th>-->
+<!--                    </tr>-->
+<!--                    <tr class="cabecalho-tabela">-->
+<!--                        <td class="linha-tabela">R$4,50</td>-->
+<!--                        <td class="linha-tabela">R$5,50</td>-->
+<!--                        <td class="linha-tabela">R$5,99</td>-->
+<!--                        <td class="linha-tabela">R$4,99</td>-->
+<!--                    </tr>-->
+<!--                </table>-->
+            </dl>
+        </div>
+</main>
+    <script src="../js/conversor.js"></script>
+</body>
+</html>

@@ -1,0 +1,157 @@
+
+body {
+    font-family: 'Roboto Mono', monospace;
+    color: #ffffff;
+    min-height: 400px;
+    background-color: #000000;
+    background-size: 100vh;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+    text-align: center;
+}
+
+.page-title {
+    color: #ffffff;
+    margin: 0 0 5px;
+}
+
+.page-subtitle {
+    color: #ffffff;
+    margin-top: 5px;
+}
+
+.page-logo {
+    width: 25rem;
+}
+
+.alura-logo {
+    width: 40px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.container-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #ffffff;
+    background-color: #0c0b0b;
+    margin-top: 2rem;
+    border: 2px solid #0c0b0b;
+    border-radius: 4px;
+
+}
+.container-card-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 15rem;
+    height: 15rem;
+    font-weight: bold;
+    box-sizing: border-box;
+}
+
+.cadeado{
+    margin-right: 10px;
+}
+
+.container-card-title {
+    background-color: #1b1a1a;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    width: 100%;
+}
+.card-wrapper{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 60rem;
+}
+.container-header{
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+}
+
+
+.input-container{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding:  .2rem;
+    text-align: right;
+    font-size: 1.3rem;
+    background-color: #1b1a1a;
+}
+
+.button{
+    color: #ede0e0;
+    font-weight: bold;
+    padding: 5px;
+    font-size: 1rem;
+    background-color: #313030;
+    border-radius: 4px;
+
+}
+.input{
+    margin: 2px;
+    color: #000000;
+}
+
+.data-cotacao{
+    text-align: left;
+}
+.titulo-cotacao{
+    font-weight: bold;
+    font-size: 1.3rem;
+    margin: 10px;
+}
+.valo-confertido {
+    font-weight: bold;
+    font-size: 1.3rem;
+    margin: 10px;
+    color: #c89d9d;
+}
+
+.table-valores{
+    width: 100%;
+    padding-left: 20px;
+    border: 2px solid #0c0b0b
+}
+
+.cabecalho-tabela{
+
+    display: flex;
+    justify-content: space-around;
+
+}
+.linha-tabela{
+    margin: 5px;
+
+
+}
+.container-cotacao{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+    color: #ffffff;
+    width: 60rem;
+    border: 2px solid #0c0b0b;
+    border-radius: 4px;
+}
+
+
+
+
