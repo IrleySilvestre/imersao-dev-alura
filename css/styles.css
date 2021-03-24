@@ -113,6 +113,7 @@ body {
     margin: 2px;
     color: #000000;
 }
+
 .input:focus{
     outline:none;
 }
@@ -132,9 +133,7 @@ body {
     margin: 10px;
     color: #c89d9d;
 }
-.valor-convertido::before{
-    content: "R$ ";
-}
+
 .linha-tabela::before{
     content: "R$ ";
 }
