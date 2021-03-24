@@ -11,6 +11,18 @@ input.addEventListener('blur', (evento) =>{
     })
 })
 
+input.addEventListener('onclick', (evento) =>{
+    SimpleMaskMoney.setMask(input, {
+        prefix: 'R$ ',
+        fixed: true,
+        fractionDigits: 2,
+        decimalSeparator: ',',
+        thousandsSeparator: '.',
+        cursor: 'end'
+
+    })
+})
+
 const formConversao = document.querySelector('[data-form="form-conversao"]')
 
 
