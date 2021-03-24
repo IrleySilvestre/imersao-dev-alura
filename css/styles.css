@@ -96,6 +96,10 @@ body {
     background-color: #1b1a1a;
 }
 
+.input-container.-data{
+    font-size: .9rem;
+}
+
 .button{
     color: #ede0e0;
     font-weight: bold;
@@ -109,6 +113,10 @@ body {
     margin: 2px;
     color: #000000;
 }
+.input:focus{
+    outline:none;
+}
+
 
 .data-cotacao{
     text-align: left;
@@ -118,11 +126,17 @@ body {
     font-size: 1.3rem;
     margin: 10px;
 }
-.valo-confertido {
+.valor-convertido {
     font-weight: bold;
     font-size: 1.3rem;
     margin: 10px;
     color: #c89d9d;
+}
+.valor-convertido::before{
+    content: "R$ ";
+}
+.linha-tabela::before{
+    content: "R$ ";
 }
 
 .table-valores{
