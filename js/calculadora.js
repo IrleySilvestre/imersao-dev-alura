@@ -1,15 +1,16 @@
 function calcular() {
 
-    const vlr1 = document.querySelector('[data-primeiroNumero]').value
+    const vlr1 = parseFloat(document.querySelector('[data-primeiroNumero]').value)
 
-    const vlr2 = document.querySelector('[data-segundoNumero]').value
+    const vlr2 =parseFloat( document.querySelector('[data-segundoNumero]').value)
 
     const operacao = document.querySelector('[data-operacaoselect]').value
 
     if (vlr2 == 0 & operacao === '/'){
         document.querySelector('[data-resultado]').textContent = 'Error div/0'
     }else{
-        const result = calcula(vlr1, vlr2, operacao)
+        const result = calcula(vlr1, vlr2, operacao).toFixed(2)
+        console.log(result)
         document.querySelector('[data-resultado]').textContent = `${vlr1} ${operacao} ${vlr2} = ${result}`
     }
 
