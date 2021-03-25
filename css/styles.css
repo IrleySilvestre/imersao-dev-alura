@@ -37,8 +37,26 @@ body {
 .alura-logo {
     width: 40px;
     position: absolute;
-    top: 10px;
-    right: 10px;
+    top: 15px;
+    right: 15px;
+    transition: transform 300ms;
+}
+.alura-logo:hover{
+    transform: scale(1.05);
+}
+
+
+.home{
+    top: 15px;
+    left: 15px;
+    position: absolute;
+    font-size: 1.8rem;
+    font-weight: bold;
+    transition: transform 300ms;
+}
+
+.home:hover  {
+    transform: scale(1.05);
 }
 
 .container-card {
