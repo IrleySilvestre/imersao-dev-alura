@@ -18,6 +18,11 @@ body {
     text-align: center;
 }
 
+.container-main{
+    display: flex;
+    justify-content: center;
+}
+
 .page-title {
     font-size: 2rem;
     font-weight: bold;
@@ -225,9 +230,62 @@ body {
     color: #ffffff;
     width: 60rem;
     border: 2px solid #0c0b0b;
-    border-radius: 4px;
+
 }
 
+.filmes-wrapper{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 80rem;
+
+
+}
+
+.card-filmes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #1b1a1a;
+    text-align: center;
+    margin-bottom: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+    transition: transform 300ms;
+
+
+}
+
+.card-filmes:hover{
+    transform: scale(1.05);
+}
+
+.filmes-wrapper-img{
+    box-sizing: border-box ;
+
+}
+
+.filmes-wrapper-nome{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    height: 2rem;
+    padding: 5px;
+    width: 80%;
+    margin-bottom: 5px  ;
+}
+
+.filmes-wrapper-link{
+    padding: 5px;
+    margin-bottom: 5px;
+    border: white 1px solid;
+    border-radius: 5px;
+    background-color: #1b1a1a;
+
+
+}
 
 
 
