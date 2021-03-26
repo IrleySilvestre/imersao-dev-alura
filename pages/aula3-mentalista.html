@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <title>Conversor de Moedas</title>
+</head>
+<body>
+<header class="container-header">
+
+    <div class="container-header">
+        <a href="/imersao-dev-alura/index.html" >
+            <div class="home"> Home</div>
+        </a>
+    </div>
+
+    <h1 class="page-title">
+        Mentalista
+    </h1>
+    <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-calculadora.svg" class="page-logo"
+         alt="">
+
+    <div class="container-header">
+        <a href="https://alura.com.br/" target="_blank">
+            <img src="https://www.alura.com.br/assets/img/home/alura-logo.svg" alt="" class="alura-logo">
+        </a>
+    </div>
+
+
+</header>
+
+<main>
+
+    <div class="container-calc">
+        <label data-numeroSecreto hidden></label>
+
+        <label data-chances class="input-label" > 3 </label>
+
+        <label data-reiniciar  class="input-label" onclick="reiniciar()"> Reiniciar </label>
+        <label for="numero" class="input-label">Digite um numero entre 0 e 10</label>
+        <input data-chute type="number" id="numero" name="numero" class="input-calc">
+        <label data-mensagem class="label-resultado" for="operacao"></label>
+        <button onclick="adivinhar()" translate="yes" data-btnadivinha class="button"  >Iniciar</button>
+    </div>
+
+</main>
+<script src="../js/mentalista.js"></script>
+</body>
+</html>
