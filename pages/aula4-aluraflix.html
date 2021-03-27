@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="../css/reset.css">
     <title>Conversor de Moedas</title>
+
 </head>
 <body>
 <header class="container-header">
@@ -32,127 +33,13 @@
 </header>
 
 <main class="container-main">
+    <div data-bntCarregaFilmes onclick="listarFilmesNaTela()">Carregar</div>
 
-    <div class="filmes-wrapper">
-        <div class="card-filmes">
-            <div class="filmes-wrapper-img">
-                <img  src="https://m.media-amazon.com/images/M/MV5BYjI3NDg0ZTEtMDEwYS00YWMyLThjYjktMTNlM2NmYjc1OGRiXkEyXkFqcGdeQXVyMTEyMjM2NDc2._V1_UX182_CR0,0,182,268_AL_.jpg"
-                     alt="_" >
-            </div>
-            <h3 class="filmes-wrapper-nome">Liga da Justiça de Zack Snyder (2021)</h3>
-            <a class="filmes-wrapper-link"  target="_blank" target="_blank"
-               href="https://www.imdb.com/video/vi2343551001?playlistId=tt12361974&ref_=tt_ov_vi"> Sobre o Filme</a>
-        </div>
+    <div data-filmesWrapper class="filmes-wrapper-img">
+    </div>
 
-        <div class="card-filmes">
-            <div class="filmes-wrapper-img">
-                <img src="https://m.media-amazon.com/images/M/MV5BYjI3NDg0ZTEtMDEwYS00YWMyLThjYjktMTNlM2NmYjc1OGRiXkEyXkFqcGdeQXVyMTEyMjM2NDc2._V1_UX182_CR0,0,182,268_AL_.jpg"
-                     alt="">
-            </div>
-            <h3 class="filmes-wrapper-nome">Liga da Justiça de Zack Snyder (2021)</h3>
-            <a class="filmes-wrapper-link" target="_blank"
-               href="https://www.imdb.com/video/vi2343551001?playlistId=tt12361974&ref_=tt_ov_vi"> Sobre o Filme</a>
-        </div>
+    <div data-filmes class="filmes-wrapper">
 
-        <div class="card-filmes">
-            <div class="filmes-wrapper-img">
-                <img src="https://m.media-amazon.com/images/M/MV5BYjI3NDg0ZTEtMDEwYS00YWMyLThjYjktMTNlM2NmYjc1OGRiXkEyXkFqcGdeQXVyMTEyMjM2NDc2._V1_UX182_CR0,0,182,268_AL_.jpg"
-                     alt="">
-            </div>
-            <h3 class="filmes-wrapper-nome">Liga da Justiça de Zack Snyder (2021)</h3>
-            <a class="filmes-wrapper-link" target="_blank"
-               href="https://www.imdb.com/video/vi2343551001?playlistId=tt12361974&ref_=tt_ov_vi"> Sobre o Filme</a>
-        </div>
-
-        <div class="card-filmes">
-            <div class="filmes-wrapper-img">
-                <img src="https://m.media-amazon.com/images/M/MV5BYjI3NDg0ZTEtMDEwYS00YWMyLThjYjktMTNlM2NmYjc1OGRiXkEyXkFqcGdeQXVyMTEyMjM2NDc2._V1_UX182_CR0,0,182,268_AL_.jpg"
-                     alt="">
-            </div>
-            <h3 class="filmes-wrapper-nome">Liga da Justiça de Zack Snyder (2021)</h3>
-            <a class="filmes-wrapper-link" target="_blank"
-               href="https://www.imdb.com/video/vi2343551001?playlistId=tt12361974&ref_=tt_ov_vi"> Sobre o Filme</a>
-        </div>
-
-        <div class="card-filmes">
-            <div class="filmes-wrapper-img">
-                <img src="https://m.media-amazon.com/images/M/MV5BYjI3NDg0ZTEtMDEwYS00YWMyLThjYjktMTNlM2NmYjc1OGRiXkEyXkFqcGdeQXVyMTEyMjM2NDc2._V1_UX182_CR0,0,182,268_AL_.jpg"
-                     alt="">
-            </div>
-            <h3 class="filmes-wrapper-nome">Liga da Justiça de Zack Snyder (2021)</h3>
-            <a class="filmes-wrapper-link" target="_blank"
-               href="https://www.imdb.com/video/vi2343551001?playlistId=tt12361974&ref_=tt_ov_vi"> Sobre o Filme</a>
-        </div>
-
-        <div class="card-filmes">
-            <div class="filmes-wrapper-img">
-                <img src="https://m.media-amazon.com/images/M/MV5BYjI3NDg0ZTEtMDEwYS00YWMyLThjYjktMTNlM2NmYjc1OGRiXkEyXkFqcGdeQXVyMTEyMjM2NDc2._V1_UX182_CR0,0,182,268_AL_.jpg"
-                     alt="">
-            </div>
-            <h3 class="filmes-wrapper-nome">Liga da Justiça de Zack Snyder (2021)</h3>
-            <a class="filmes-wrapper-link" target="_blank"
-               href="https://www.imdb.com/video/vi2343551001?playlistId=tt12361974&ref_=tt_ov_vi"> Sobre o Filme</a>
-        </div>
-
-        <div class="card-filmes">
-            <div class="filmes-wrapper-img">
-                <img src="https://m.media-amazon.com/images/M/MV5BYjI3NDg0ZTEtMDEwYS00YWMyLThjYjktMTNlM2NmYjc1OGRiXkEyXkFqcGdeQXVyMTEyMjM2NDc2._V1_UX182_CR0,0,182,268_AL_.jpg"
-                     alt="">
-            </div>
-            <h3 class="filmes-wrapper-nome">Liga da Justiça de Zack Snyder (2021)</h3>
-            <a class="filmes-wrapper-link" target="_blank"
-               href="https://www.imdb.com/video/vi2343551001?playlistId=tt12361974&ref_=tt_ov_vi"> Sobre o Filme</a>
-        </div>
-
-        <div class="card-filmes">
-            <div class="filmes-wrapper-img">
-                <img src="https://m.media-amazon.com/images/M/MV5BYjI3NDg0ZTEtMDEwYS00YWMyLThjYjktMTNlM2NmYjc1OGRiXkEyXkFqcGdeQXVyMTEyMjM2NDc2._V1_UX182_CR0,0,182,268_AL_.jpg"
-                     alt="">
-            </div>
-            <h3 class="filmes-wrapper-nome">Liga da Justiça de Zack Snyder (2021)</h3>
-            <a class="filmes-wrapper-link" target="_blank"
-               href="https://www.imdb.com/video/vi2343551001?playlistId=tt12361974&ref_=tt_ov_vi"> Sobre o Filme</a>
-        </div>
-
-        <div class="card-filmes">
-            <div class="filmes-wrapper-img">
-                <img src="https://m.media-amazon.com/images/M/MV5BYjI3NDg0ZTEtMDEwYS00YWMyLThjYjktMTNlM2NmYjc1OGRiXkEyXkFqcGdeQXVyMTEyMjM2NDc2._V1_UX182_CR0,0,182,268_AL_.jpg"
-                     alt="">
-            </div>
-            <h3 class="filmes-wrapper-nome">Liga da Justiça de Zack Snyder (2021)</h3>
-            <a class="filmes-wrapper-link" target="_blank"
-               href="https://www.imdb.com/video/vi2343551001?playlistId=tt12361974&ref_=tt_ov_vi"> Sobre o Filme</a>
-        </div>
-
-        <div class="card-filmes">
-            <div class="filmes-wrapper-img">
-                <img src="https://m.media-amazon.com/images/M/MV5BYjI3NDg0ZTEtMDEwYS00YWMyLThjYjktMTNlM2NmYjc1OGRiXkEyXkFqcGdeQXVyMTEyMjM2NDc2._V1_UX182_CR0,0,182,268_AL_.jpg"
-                     alt="">
-            </div>
-            <h3 class="filmes-wrapper-nome">Liga da Justiça de Zack Snyder (2021)</h3>
-            <a class="filmes-wrapper-link" target="_blank"
-               href="https://www.imdb.com/video/vi2343551001?playlistId=tt12361974&ref_=tt_ov_vi"> Sobre o Filme</a>
-        </div>
-
-        <div class="card-filmes">
-            <div class="filmes-wrapper-img">
-                <img src="https://m.media-amazon.com/images/M/MV5BYjI3NDg0ZTEtMDEwYS00YWMyLThjYjktMTNlM2NmYjc1OGRiXkEyXkFqcGdeQXVyMTEyMjM2NDc2._V1_UX182_CR0,0,182,268_AL_.jpg"
-                     alt="">
-            </div>
-            <h3 class="filmes-wrapper-nome">Liga da Justiça de Zack Snyder (2021)</h3>
-            <a class="filmes-wrapper-link" target="_blank"
-               href="https://www.imdb.com/video/vi2343551001?playlistId=tt12361974&ref_=tt_ov_vi"> Sobre o Filme</a>
-        </div>
-
-        <div class="card-filmes">
-            <div class="filmes-wrapper-img">
-                <img src="https://m.media-amazon.com/images/M/MV5BYjI3NDg0ZTEtMDEwYS00YWMyLThjYjktMTNlM2NmYjc1OGRiXkEyXkFqcGdeQXVyMTEyMjM2NDc2._V1_UX182_CR0,0,182,268_AL_.jpg"
-                     alt="">
-            </div>
-            <h3 class="filmes-wrapper-nome">Liga da Justiça de Zack Snyder (2021)</h3>
-            <a class="filmes-wrapper-link" target="_blank"
-               href="https://www.imdb.com/video/vi2343551001?playlistId=tt12361974&ref_=tt_ov_vi"> Sobre o Filme</a>
-        </div>
 
     </div>
 
