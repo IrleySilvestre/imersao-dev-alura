@@ -115,10 +115,9 @@ body {
     text-align: center;
 }
 .container-calc{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    display: block;
+    text-align: center;
+
 }
 
 .img-calculadora{
@@ -159,10 +158,9 @@ body {
 
 }
 .input-label{
-    margin-bottom: 5px;
     color: #ffffff;
     font-size: 1rem;
-
+    padding: 5px;
 }
 
 
@@ -171,6 +169,7 @@ body {
     color: #bb9653;
     font-weight: bold;
     text-align: center;
+    padding: 5px;
 }
 .input {
     margin: 2px;
