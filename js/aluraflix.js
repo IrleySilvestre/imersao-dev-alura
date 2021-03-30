@@ -29,6 +29,11 @@ var listaFilmes = [
         nome: 'Wonder Woman (2017)',
         link: 'https://www.imdb.com/title/tt0451279/?ref_=hm_tpks_tt_i_5_pd_tp1_cp'
     },
+    {
+        imagem: 'https://m.media-amazon.com/images/M/MV5BM2EwMmRhMmUtMzBmMS00ZDQ3LTg4OGEtNjlkODk3ZTMxMmJlXkEyXkFqcGdeQXVyMjM5ODk1NDU@._V1_UX182_CR0,0,182,268_AL_.jpg',
+        nome: 'The Queen\'s Gambit',
+        link: 'https://www.imdb.com/title/tt10048342/?ref_=hm_fanfav_tt_i_15_pd_fp1'
+    },
 
 ]
 
