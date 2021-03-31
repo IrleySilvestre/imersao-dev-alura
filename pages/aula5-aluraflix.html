@@ -34,10 +34,24 @@
         AluraFlix
     </h1>
     <h2 class="page-subtitle-incluirfilme">Qual seu filme Favorito ?</h2>
-    <input class="input-incluirfilme" type="text" required >
 
-    <button class="btn-incluirfilme">Adicionar</button>
 
+    <a href="#modalIncluirFilme" class="btn-incluirfilme">Adicionar</a>
+
+    <div id="modalIncluirFilme" class="modal">
+        <div>
+            <a href="#fechar" title="Fechar" class="fechar-modal">x</a>
+            <h2 class="page-subtitle-incluirfilme">Dados do Filme</h2>
+            <input data-urlImagem class="input-incluirfilme" placeholder="Insira o endereço da imagem" type="text"
+                   required>
+            <a href="#fechar" onclick="adicionarFilme()" title="Fechar" class="btn-incluirfilme">Adcionar</a>
+        </div>
+    </div>
+
+    <div data-filmes class="filmes-wrapper">
+
+
+    </div>
 
 
 </main>
