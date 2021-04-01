@@ -20,10 +20,6 @@
     <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-calculadora.svg" class="page-logo"
          alt="">
 
-    <h1 class="page-title">
-        Tabela de classificação
-    </h1>
-
     <div class="container-header">
         <a href="https://alura.com.br/" target="_blank">
             <img src="https://www.alura.com.br/assets/img/home/alura-logo.svg" alt="" class="alura-logo">
@@ -35,54 +31,42 @@
 <main class="container-main-tabela">
 
 
-    <table class="table-classificacao" >
+    <table class="table-classificacao">
+        <caption class="page-title">Tabela de classificação</caption>
         <thead class="table-classificacao-th-tr-td">
-        <tr class="table-classificacao-th-tr-td">
+        <tr >
+            <th class="table-classificacao-th-tr-td">#</th>
             <th class="table-classificacao-th-tr-td">Nome</th>
             <th class="table-classificacao-th-tr-td">Vitórias</th>
             <th class="table-classificacao-th-tr-td">Empates</th>
             <th class="table-classificacao-th-tr-td">Derrotas</th>
             <th class="table-classificacao-th-tr-td">Pontos</th>
-            <th class="table-classificacao-th-tr-td">Ações</th>
+            <th colspan="3" class="table-classificacao-th-tr-td">Ações</th>
         </tr>
         </thead>
-        <tbody id="tabelaJogadores">
-        <tr class="table-classificacao-th-tr-td">
-            <td class="table-classificacao-th-tr-td">Paulo</td>
-            <td class="table-classificacao-th-tr-td">2</td>
-            <td class="table-classificacao-th-tr-td">1</td>
-            <td class="table-classificacao-th-tr-td">1</td>
-            <td class="table-classificacao-th-tr-td">7</td>
-            <td class="table-classificacao-th-tr-td">
-                <button class="btn-tabelas"  onClick="adicionarVitoria()">Vitória</button>
-            </td>
-            <td class="table-classificacao-th-tr-td">
-                <button class="btn-tabelas"  onClick="adicionarEmpate()">Empate</button>
-            </td>
-            <td class="table-classificacao-th-tr-td">
-                <button class="btn-tabelas" onClick="adicionarDerrota()">Derrota</button>
-            </td>
-        </tr>
-        <tr class="table-classificacao-th-tr-td">
-            <td class="table-classificacao-th-tr-td">Rafa</td>
-            <td class="table-classificacao-th-tr-td">1</td>
-            <td class="table-classificacao-th-tr-td">4</td>
-            <td class="table-classificacao-th-tr-td">2</td>
-            <td class="table-classificacao-th-tr-td">7</td>
-            <td class="table-classificacao-th-tr-td">
-                <button class="btn-tabelas" onClick="adicionarVitoria()">Vitória</button>
-            </td>
-            <td class="table-classificacao-th-tr-td">
-                <button class="btn-tabelas" onClick="adicionarEmpate()">Empate</button>
-            </td>
-            <td class="table-classificacao-th-tr-td">
-                <button class="btn-tabelas" onClick="adicionarDerrota()">Derrota</button>
-            </td>
-        </tr>
+        <tbody data-tbljogadores id="tabelaJogadores">
+<!--        <tr >-->
+<!--            <td align="middle" class="table-classificacao-th-tr-td"><img class="img-tabela"-->
+<!--                                                                         src="../img/paulo-silveira.png"></td>-->
+<!--            <td class="table-classificacao-th-tr-td">Paulo</td>-->
+<!--            <td class="table-classificacao-th-tr-td">2</td>-->
+<!--            <td class="table-classificacao-th-tr-td">1</td>-->
+<!--            <td class="table-classificacao-th-tr-td">1</td>-->
+<!--            <td class="table-classificacao-th-tr-td">7</td>-->
+<!--            <td class="table-classificacao-th-tr-td">-->
+<!--                <button class="btn-tabelas" onClick="adicionarVitoria()">Vitória</button>-->
+<!--            </td>-->
+<!--            <td class="table-classificacao-th-tr-td">-->
+<!--                <button class="btn-tabelas" onClick="adicionarEmpate()">Empate</button>-->
+<!--            </td>-->
+<!--            <td class="table-classificacao-th-tr-td">-->
+<!--                <button class="btn-tabelas" onClick="adicionarDerrota()">Derrota</button>-->
+<!--            </td>-->
+<!--        </tr>-->
         </tbody>
     </table>
 
 </main>
-<script src="../js/aluraflix-aula5.js"></script>
+<script src="../js/aula6-tabela.js"></script>
 </body>
 </html>
