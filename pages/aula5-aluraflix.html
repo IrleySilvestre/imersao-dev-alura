@@ -5,24 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="../css/reset.css">
-    <title>Aluraflix</title>
+    <title>Aluraflix - Aula 5</title>
 
 </head>
-<body>
+<body style="background-color: #333533 ">
 <header class="container-header">
 
     <div class="container-header">
         <a href="/imersao-dev-alura/index.html">
-            <div class="home"> Home</div>
+            <div class="home">Home</div>
         </a>
     </div>
 
     <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-calculadora.svg" class="page-logo"
          alt="">
-
-    <h1 class="page-title">
-        Aluraflix
-    </h1>
 
     <div class="container-header">
         <a href="https://alura.com.br/" target="_blank">
@@ -34,12 +30,31 @@
 
 <main class="container-main">
 
+    <h1 class="page-title-incluirfilme">
+        AluraFlix
+    </h1>
+    <h2 class="page-subtitle-incluirfilme">Qual seu filme Favorito ?</h2>
+
+
+    <a href="#modalIncluirFilme" class="btn-incluirfilme">Adicionar</a>
+
+    <div id="modalIncluirFilme" class="modal">
+        <div>
+            <a href="#fechar" title="Fechar" class="fechar-modal">x</a>
+            <h2 class="page-subtitle-incluirfilme">Dados do Filme</h2>
+            <input data-urlImagem class="input-incluirfilme" placeholder="Insira o endereço da imagem" type="text"
+                   required>
+            <a href="#fechar" onclick="adicionarFilme()" title="Fechar" class="btn-incluirfilme">Adcionar</a>
+        </div>
+    </div>
+
     <div data-filmes class="filmes-wrapper">
 
 
     </div>
 
+
 </main>
-<script src="../js/aluraflix.js"></script>
+<script src="../js/aluraflix-aula5.js"></script>
 </body>
 </html>

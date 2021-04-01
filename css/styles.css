@@ -18,9 +18,16 @@ body {
     text-align: center;
 }
 
-.container-main{
+.container-main {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-main-tabela {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .page-title {
@@ -46,12 +53,13 @@ body {
     right: 15px;
     transition: transform 300ms;
 }
-.alura-logo:hover{
+
+.alura-logo:hover {
     transform: scale(1.05);
 }
 
 
-.home{
+.home {
     top: 15px;
     left: 15px;
     position: absolute;
@@ -60,7 +68,7 @@ body {
     transition: transform 300ms;
 }
 
-.home:hover  {
+.home:hover {
     transform: scale(1.05);
 }
 
@@ -77,10 +85,11 @@ body {
 
 }
 
-.container-card:hover{
+.container-card:hover {
     transform: scale(1.05);
 }
-.container-card-img{
+
+.container-card-img {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -90,7 +99,7 @@ body {
     box-sizing: border-box;
 }
 
-.cadeado{
+.cadeado {
     margin-right: 10px;
 }
 
@@ -102,28 +111,30 @@ body {
     padding-bottom: 1rem;
     width: 100%;
 }
-.card-wrapper{
+
+.card-wrapper {
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
     width: 60rem;
 }
-.container-header{
+
+.container-header {
     align-items: center;
     padding: 20px;
     text-align: center;
 }
-.container-calc{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+
+.container-calc {
+    display: block;
+    text-align: center;
+
 }
 
-.img-calculadora{
+.img-calculadora {
     width: 264px;
-    height:360px;
+    height: 360px;
     /*background-image: url("/img/dia-2-calculadora-calc.png");*/
     background-image: url('https://www.alura.com.br/assets/img/imersoes/dev-2021/dia-2-calculadora-calc.png');
     margin: 1rem auto;
@@ -134,21 +145,21 @@ body {
 }
 
 
-.input-container{
+.input-container {
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    padding:  .2rem;
+    padding: .2rem;
     text-align: right;
     font-size: 1.3rem;
     background-color: #1b1a1a;
 }
 
-.input-container.-data{
+.input-container.-data {
     font-size: .9rem;
 }
 
-.button{
+.button {
     display: inline;
     color: #ede0e0;
     font-weight: bold;
@@ -158,43 +169,48 @@ body {
     border-radius: 4px;
 
 }
-.input-label{
-    margin-bottom: 5px;
+
+.input-label {
     color: #ffffff;
     font-size: 1rem;
-
+    padding: 5px;
 }
 
 
-.label-resultado{
+.label-resultado {
     font-size: 1.5rem;
     color: #bb9653;
     font-weight: bold;
     text-align: center;
+    padding: 5px;
 }
+
 .input {
     margin: 2px;
     color: #000000;
 }
 
-.input:focus{
-    outline:none;
+.input:focus {
+    outline: none;
 }
-.input-calc{
+
+.input-calc {
     margin: 7px 0;
     color: #000000;
     width: 5rem;
 }
 
 
-.data-cotacao{
+.data-cotacao {
     text-align: left;
 }
-.titulo-cotacao{
+
+.titulo-cotacao {
     font-weight: bold;
     font-size: 1.3rem;
     margin: 10px;
 }
+
 .valor-convertido {
     font-weight: bold;
     font-size: 1.3rem;
@@ -202,28 +218,30 @@ body {
     color: #c89d9d;
 }
 
-.linha-tabela::before{
+.linha-tabela::before {
     content: "R$ ";
 }
 
-.table-valores{
+.table-valores {
     width: 100%;
     padding-left: 20px;
     border: 2px solid #0c0b0b
 }
 
-.cabecalho-tabela{
+.cabecalho-tabela {
 
     display: flex;
     justify-content: space-around;
 
 }
-.linha-tabela{
+
+.linha-tabela {
     margin: 5px;
 
 
 }
-.container-cotacao{
+
+.container-cotacao {
     margin-left: auto;
     margin-right: auto;
     margin-top: 2rem;
@@ -233,7 +251,7 @@ body {
 
 }
 
-.filmes-wrapper{
+.filmes-wrapper {
     display: flex;
     align-items: center;
     align-content: center;
@@ -244,7 +262,7 @@ body {
 
 }
 
-.card-filmes{
+.card-filmes {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -258,33 +276,166 @@ body {
 
 }
 
-.card-filmes:hover{
+.card-filmes:hover {
     transform: scale(1.05);
 }
 
-.filmes-wrapper-img{
-    box-sizing: border-box ;
+.filmes-wrapper-img {
+    box-sizing: border-box;
 
 }
 
-.filmes-wrapper-nome{
+.filmes-wrapper-nome {
     display: flex;
     align-content: center;
     align-items: center;
     height: 2rem;
     padding: 5px;
     width: 80%;
-    margin-bottom: 5px  ;
+    margin-bottom: 5px;
 }
 
-.filmes-wrapper-link{
+.filmes-wrapper-link {
     padding: 5px;
     margin-bottom: 5px;
     border: white 1px solid;
     border-radius: 5px;
     background-color: #1b1a1a;
 
+}
 
+.table-classificacao {
+    text-align: center;
+    font-size: 1.5rem;
+    border: 2px solid white;
+    border-collapse: collapse;
+    width: 70%;
+
+}
+
+.table-classificacao-th-tr-td {
+    text-align: center;
+    vertical-align: middle;
+    border: solid 1px white;
+    color: white;
+
+}
+
+.btn-tabelas {
+    background: white;
+    color: #1b1a1a;
+    font-weight: bold;
+    font-size: 1rem;
+    margin: 7px;
+    padding: 5px;
+    border-radius: 4px;
+    transition: transform 200ms;
+
+}
+
+.btn-tabelas:hover {
+    transform: scale(1.03);
+}
+
+.page-title-incluirfilme {
+    font-size: 60px;
+    color: #F5CB5C;
+}
+
+.page-subtitle-incluirfilme {
+    color: #AAAAAA;
+    font-size: 25px;
+    margin-top: 5px;
+
+}
+
+.input-incluirfilme {
+    text-align: center;
+    font-style: italic;
+    padding: 4px 6px;
+    color: black;
+    font-weight: bold;
+    background-color: #C4C4C4;
+    width: 285px;
+    height: 27px;
+    border: 1px solid #000000;
+    box-shadow: 2px 2px 0px #000000;
+    margin-top: 20px;
+}
+
+.btn-incluirfilme {
+    display: block;
+    text-align: center;
+    margin-top: 7px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 1.2rem;
+    background-color: #495057;
+    border: 1px solid #000000;
+    width: 230px;
+    line-height: 35px;
+    box-shadow: 4px 4px 0px rgba(0, 0, 0, 0.85);
+    transition: transforme 300ms;
+}
+
+.btn-incluirfilme:hover {
+    transform: scale(1.04);
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 99999;
+    opacity: 0;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    pointer-events: none;
+
+}
+.modal:target{
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.modal > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+    position: relative;
+    margin: 10% auto;
+    padding: 15px 20px;
+    background: #47545f;
+}
+
+.fechar-modal{
+    position: absolute;
+    width: 30px;
+    right: -15px;
+    top: -20px;
+    text-align: center;
+    line-height: 30px;
+    margin-top: 5px;
+    background: #ff4545;
+    border-radius: 50%;
+    font-size: 16px;
+    color: #8d0000;
+}
+
+.img-tabela {
+
+    box-sizing: border-box;
+    border-radius: 50%;
+    border: solid 1px black;
+    width: 60px;
+    height: 60px;
+    margin-top: 8px;
 }
 
 

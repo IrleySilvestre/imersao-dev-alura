@@ -16,11 +16,12 @@
         </a>
     </div>
 
+    <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-calculadora.svg" class="page-logo"
+         alt="">
+
     <h1 class="page-title">
         Mentalista
     </h1>
-    <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-calculadora.svg" class="page-logo"
-         alt="">
 
     <div class="container-header">
         <a href="https://alura.com.br/" target="_blank">
@@ -36,13 +37,17 @@
     <div class="container-calc">
         <label data-numeroSecreto hidden></label>
 
-        <label data-chances class="input-label" > 3 </label>
+        <p>Você tem: <label data-chances class="input-label" > 3 </label> chances </p>
 
-        <label data-reiniciar  class="input-label" onclick="reiniciar()"> Reiniciar </label>
         <label for="numero" class="input-label">Digite um numero entre 0 e 10</label>
         <input data-chute type="number" id="numero" name="numero" class="input-calc">
-        <label data-mensagem class="label-resultado" for="operacao"></label>
         <button onclick="adivinhar()" translate="yes" data-btnadivinha class="button"  >Iniciar</button>
+        <br>
+        <br>
+        <label data-mensagem class="label-resultado" for="operacao"></label>
+        <br>
+        <br>
+        <label data-reiniciar class="button" onclick="reiniciar()" hidden> Reiniciar </label>
     </div>
 
 </main>
