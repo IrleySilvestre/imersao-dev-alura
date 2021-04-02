@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="../css/reset.css">
-    <title>Aluraflix - Aula 5</title>
+    <title>Tabela de classificação</title>
 
 </head>
 <body>
@@ -30,11 +30,14 @@
 
 <main class="container-main-tabela">
 
+    <div class="btn-incluirfilme addjogador">
+        <a href="#modalAddJogador">Adicionar Jogador</a>
+    </div>
 
-    <table class="table-classificacao">
+    <table class="table-classificacao sortable">
         <caption class="page-title">Tabela de classificação</caption>
         <thead class="table-classificacao-th-tr-td">
-        <tr >
+        <tr>
             <th class="table-classificacao-th-tr-td">#</th>
             <th class="table-classificacao-th-tr-td">Nome</th>
             <th class="table-classificacao-th-tr-td">Vitórias</th>
@@ -45,28 +48,43 @@
         </tr>
         </thead>
         <tbody data-tbljogadores id="tabelaJogadores">
-<!--        <tr >-->
-<!--            <td align="middle" class="table-classificacao-th-tr-td"><img class="img-tabela"-->
-<!--                                                                         src="../img/paulo-silveira.png"></td>-->
-<!--            <td class="table-classificacao-th-tr-td">Paulo</td>-->
-<!--            <td class="table-classificacao-th-tr-td">2</td>-->
-<!--            <td class="table-classificacao-th-tr-td">1</td>-->
-<!--            <td class="table-classificacao-th-tr-td">1</td>-->
-<!--            <td class="table-classificacao-th-tr-td">7</td>-->
-<!--            <td class="table-classificacao-th-tr-td">-->
-<!--                <button class="btn-tabelas" onClick="adicionarVitoria()">Vitória</button>-->
-<!--            </td>-->
-<!--            <td class="table-classificacao-th-tr-td">-->
-<!--                <button class="btn-tabelas" onClick="adicionarEmpate()">Empate</button>-->
-<!--            </td>-->
-<!--            <td class="table-classificacao-th-tr-td">-->
-<!--                <button class="btn-tabelas" onClick="adicionarDerrota()">Derrota</button>-->
-<!--            </td>-->
-<!--        </tr>-->
+        <!--        <tr >-->
+        <!--            <td align="middle" class="table-classificacao-th-tr-td"><img class="img-tabela"-->
+        <!--                                                                         src="../img/paulo-silveira.png"></td>-->
+        <!--            <td class="table-classificacao-th-tr-td">Paulo</td>-->
+        <!--            <td class="table-classificacao-th-tr-td">2</td>-->
+        <!--            <td class="table-classificacao-th-tr-td">1</td>-->
+        <!--            <td class="table-classificacao-th-tr-td">1</td>-->
+        <!--            <td class="table-classificacao-th-tr-td">7</td>-->
+        <!--            <td class="table-classificacao-th-tr-td">-->
+        <!--                <button class="btn-tabelas" onClick="adicionarVitoria()">Vitória</button>-->
+        <!--            </td>-->
+        <!--            <td class="table-classificacao-th-tr-td">-->
+        <!--                <button class="btn-tabelas" onClick="adicionarEmpate()">Empate</button>-->
+        <!--            </td>-->
+        <!--            <td class="table-classificacao-th-tr-td">-->
+        <!--                <button class="btn-tabelas" onClick="adicionarDerrota()">Derrota</button>-->
+        <!--            </td>-->
+        <!--        </tr>-->
         </tbody>
     </table>
 
+
+    <div data-modalAddJogador id="modalAddJogador" class="modal">
+        <div>
+            <a href="#fechar" title="Fechar" class="fechar-modal">x</a>
+            <h2 class="page-subtitle-incluirfilme">Dados do Jogador</h2>
+            <input data-nomeJogador class="input-incluirfilme" placeholder="Insira o nome do Jogador" type="text"
+                   required>
+            <input data-urlImagemJogador class="input-incluirfilme"
+                   placeholder="Insira o endereço da imagem do Jogadora"
+                   type="text" required>
+            <a href="#fechar" onclick="addAtleta()" title="Fechar" class="btn-incluirfilme">Adcionar</a>
+        </div>
+    </div>
+
 </main>
 <script src="../js/aula6-tabela.js"></script>
+<script src="../js/sorttable.js"></script>
 </body>
 </html>

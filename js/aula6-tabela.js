@@ -16,19 +16,29 @@ var atleta2 = {
     pontos: 0,
     foto: 'https://www.risasinmas.com/wp-content/uploads/2014/01/Caricatura-de-Rafa-Nadal-2.jpg'
 }
-addAtleta()
 
 listAtletas.push(atleta1, atleta2)
 
+
+
 function addAtleta (){
+    const nome = document.querySelector('[data-nomeJogador]').value
+    const url = document.querySelector('[data-urlImagemJogador]').value
     const atleta  = new Object()
-    atleta.nome = 'Djoko'
+    atleta.nome = nome
     atleta.vitorias = 0
     atleta.empates = 0
     atleta.derrotas = 0
     atleta.pontos = 0
-    atleta.foto = 'https://i.pinimg.com/originals/9c/06/d0/9c06d003094b961667482ec883300058.jpg'
+    if (url.endsWith('.jpg')){
+        atleta.foto = url
+    }else {
+        atleta.foto = './img/logo-alura.png'
+    }
     listAtletas.push(atleta)
+    exibirJogadores(listAtletas)
+    document.querySelector('[data-nomeJogador]').value = ''
+    document.querySelector('[data-urlImagemJogador]').value = ''
     return listAtletas
 }
 
@@ -76,6 +86,17 @@ function addVitoria(i) {
     let atleta = listAtletas[i]
     atleta.vitorias++
     atleta.pontos = calculaPontos(atleta)
+    listAtletas.sort((a,b) =>{
+        console.log(a.pontos)
+        if (a.pontos > b.pontos){
+            return 1
+        }
+        if (a.pontos < a.pontos){
+            return -1
+        }
+        return 0
+    })
+
     exibirJogadores(listAtletas)
 
 }

@@ -359,7 +359,7 @@ body {
     width: 285px;
     height: 27px;
     border: 1px solid #000000;
-    box-shadow: 2px 2px 0px #000000;
+    box-shadow: 2px 2px #000000;
     margin-top: 20px;
 }
 
@@ -374,8 +374,12 @@ body {
     border: 1px solid #000000;
     width: 230px;
     line-height: 35px;
-    box-shadow: 4px 4px 0px rgba(0, 0, 0, 0.85);
+    box-shadow: 4px 4px rgba(0, 0, 0, 0.85);
     transition: transforme 300ms;
+}
+
+.btn-incluirfilme.addjogador{
+    margin-left: 50%;
 }
 
 .btn-incluirfilme:hover {
