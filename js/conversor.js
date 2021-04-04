@@ -1,4 +1,4 @@
-const input = document.querySelector('[data-tipo="valor"]')
+const input = document.querySelector('[data-vlr]')
 input.addEventListener('blur', (evento) =>{
     SimpleMaskMoney.setMask(input, {
     prefix: 'R$ ',
