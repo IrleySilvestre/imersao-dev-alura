@@ -1,12 +1,41 @@
-
-body {
+/*body {*/
+/*    font-family: 'Roboto Mono', monospace;*/
+/*    color: #ffffff;*/
+/*    min-height: 400px;*/
+/*    background-color: #000000;*/
+/*    background-size: 100vh;*/
+/*    background-position: center bottom;*/
+/*    background-repeat: no-repeat;*/
+/*}*/
+.body-aula1 {
     font-family: 'Roboto Mono', monospace;
     color: #ffffff;
     min-height: 400px;
     background-color: #000000;
     background-size: 100vh;
-    background-position: center bottom;
+}
+
+.body-aula5 {
+    text-align: center;
+    font-family: 'Roboto Mono', monospace;
+    color: #333533;
+    min-height: 400px;
+    background-color: #000000;
+    background-size: 100vh;
+}
+
+.body-aula6 {
+    font-family: 'Roboto Mono', monospace;
+    text-align: center;
+    color: #333533;
+    height: 100vh;
+    min-height: 400px;
+    /*background-image: url("../img/quadra-tennis.png");*/
+    background-position: center;
+    background-color: #21544b;
     background-repeat: no-repeat;
+    background-size: auto;
+    background-attachment: fixed;
 }
 
 .container {
@@ -60,6 +89,7 @@ body {
 
 
 .home {
+    color: #AAAAAA;
     top: 15px;
     left: 15px;
     position: absolute;
@@ -306,19 +336,25 @@ body {
 
 .table-classificacao {
     text-align: center;
-    font-size: 1.5rem;
-    border: 2px solid white;
+    font-size: 1.0rem;
+    border: 3px solid #ffffff;
     border-collapse: collapse;
     width: 70%;
-
 }
 
 .table-classificacao-th-tr-td {
+    padding: 3px;
     text-align: center;
     vertical-align: middle;
-    border: solid 1px white;
-    color: white;
+    border: solid 2px #ffffff;
+    color: #ffffff;
 
+}
+.page-title-tabela {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ffffff;
+    margin: 5px 0 5px;
 }
 
 .btn-tabelas {
@@ -364,6 +400,7 @@ body {
 }
 
 .btn-incluirfilme {
+    color: #ffffff;
     display: block;
     text-align: center;
     margin-top: 7px;
@@ -378,7 +415,7 @@ body {
     transition: transforme 300ms;
 }
 
-.btn-incluirfilme.addjogador{
+.btn-incluirfilme.addjogador {
     margin-left: 50%;
 }
 
@@ -402,7 +439,8 @@ body {
     pointer-events: none;
 
 }
-.modal:target{
+
+.modal:target {
     opacity: 1;
     pointer-events: auto;
 }
@@ -418,7 +456,7 @@ body {
     background: #47545f;
 }
 
-.fechar-modal{
+.fechar-modal {
     position: absolute;
     width: 30px;
     right: -15px;
@@ -433,14 +471,141 @@ body {
 }
 
 .img-tabela {
-
     box-sizing: border-box;
     border-radius: 50%;
-    border: solid 1px black;
+    border: solid 1px #ffffff;
     width: 60px;
     height: 60px;
     margin-top: 8px;
 }
 
+.button-jogar {
+    padding: .8rem 1.5rem;
+    margin: 1rem 0;
+    border-radius: 5px;
+    border: none;
+    font-size: 1rem;
+    background-color: #AAAAAA;
+    cursor: pointer;
+    transition: transform 300ms;
 
+}
+
+.button-jogar:hover{
+    transform: scale(1.05);
+}
+
+.formCartas {
+    display: flex;
+    flex-direction: column;
+    width: 900px;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.titulo-carta{
+    text-align: center;
+    font-size: 1rem;
+    color: #AAAAAA;
+    padding: 4px;
+    border-radius: 4px;
+}
+
+.carta-borda{
+    background-color: #333533;
+    padding: 20px;
+    border-radius: 10px;
+}
+.carta{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: white;
+    width: 360px;
+    height: 500px;
+    overflow: auto;
+    border-radius: 10px;
+    padding: 10px;
+
+
+}
+
+.imagem-logo{
+    width: 350px;
+    height: 400px;
+    border-radius: 10px;
+    padding: 10px;
+}
+.imagem-interrogacao{
+    position: absolute;
+    width: 350px;
+    height: 400px;
+    border-radius: 10px;
+    padding: 10px;
+    opacity: .15;
+}
+.nome-jogador {
+    font-size: 1.5rem;
+    font-weight: bold;
+    width: 100%;
+    text-align: left;
+}
+
+.carta-imagem{
+    box-sizing: border-box;
+    margin-top: 10px;
+    height: 60%;
+    width: 100%;
+}
+
+/*.carta-imagem.-jogador{*/
+/*    background-image: url("https://i.pinimg.com/originals/7c/46/fc/7c46fcbe014c5bf53b63f6b5a6b21a64.jpg");*/
+/*    background-size:auto;*/
+/*    background-repeat: no-repeat;*/
+/*    background-position-x: 5px;*/
+/*    background-position-y: 10px;*/
+/*}*/
+
+.atributos-jogador{
+    border: 2px solid #333533 ;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 25px;
+    width: 100%;
+    height: 25%;
+}
+.atributos-maquina{
+    border: 2px solid #333533 ;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    justify-content: space-around;
+    margin-top: 25px;
+    width: 100%;
+    height: 25%;
+}
+
+/*.input-radio{*/
+
+/*    margin-top: 15%;*/
+
+/*}*/
+
+.resultado-final {
+    color: white;
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: bolder;
+    padding: 1rem;
+    border: 2px solid black;
+    background-color: black;
+}
 

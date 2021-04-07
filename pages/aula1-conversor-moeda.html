@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="../css/reset.css">
     <title>Conversor de Moedas</title>
 </head>
-<body>
+<body class="body-aula1">
 <header>
     <div class="container-header">
         <a href="/imersao-dev-alura/index.html" >
@@ -28,9 +28,9 @@
             <form data-form="form-conversao">
                 <div class="input-container">
                     <labe class="input-label" for="valor">Digite o valor em Reais a ser convertido:</labe>
-                    <input autofocus name="valor" placeholder="R$ 0,00" data-tipo="valor" type="text" class="input" required>
+                    <input   tabindex name="valor" data-vlr type="text" class="input" required>
                     <span class="input-mensagem-err"></span>
-                    <button data-tipo="btnConverter" class="button" type="submit">Converter</button>
+                    <button  data-tipo="btnConverter" class="button" type="submit">Converter</button>
                 </div>
             </form>
             <p data-tipo="dataCotacao" class="input-container -data"></p>

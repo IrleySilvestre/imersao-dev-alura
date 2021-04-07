@@ -1,4 +1,4 @@
-const input = document.querySelector('[data-tipo="valor"]')
+var input = document.querySelector('[data-vlr]')
 input.addEventListener('blur', (evento) =>{
     SimpleMaskMoney.setMask(input, {
     prefix: 'R$ ',
@@ -16,7 +16,7 @@ const formConversao = document.querySelector('[data-form="form-conversao"]')
 
 formConversao.addEventListener('submit', (evento) =>{
     evento.preventDefault()
-    const valorEmReal = evento.target.querySelector("[data-tipo=valor]").value
+    const valorEmReal = evento.target.querySelector('[data-vlr]').value
 
     const somenteNumero = (valorEmReal.replace('R$',""))
     const semPonto = somenteNumero.replace('.',"")
