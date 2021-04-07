@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html"
+      xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,7 +12,7 @@
 <body class="body-aula6">
 <header>
 
-    <div >
+    <div>
         <a href="/imersao-dev-alura/index.html">
             <div class="home">Home</div>
         </a>
@@ -31,26 +32,29 @@
 <main class="container-main-tabela">
     <h1 class="page-title">Super Trunfo</h1>
 
-    <button data-btnSortear class="button-jogar" onclick="sortearCarta()" id="btnSortear">Sortear carta</button>
+    <button  data-btnSortear class="button-jogar -intativo" onclick="sortearCarta()" id="btnSortear">Sortear carta</button>
 
-    <form class="frm-jogo" id="form">
-        <h2 class="page-subtitle">Escolha o seu atributo</h2>
+    <form class="formCartas" id="form">
         <div class="wrapper">
+            <div data-cartaJogador class="carta-borda">
+                <p class="titulo-carta">Jogador</p>
+
+                 <img class="imagem-logo" src="../img/fireboll-tennis.png"
+                     alt="">
+            </div>
+
             <div>
-                <div id="carta-jogador">
-                    <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/card-super-trunfo-transparent-ajustado.png"
-                         style=" width: inherit; height: inherit; position: absolute;">
-                    <h3 data-atributosCarta></h3>
+                <div data-cartaMaquina class="carta-borda">
+                    <p class="titulo-carta">Maquina</p>
+                    <img class="imagem-logo" src="../img/fireboll-tennis.png"
+                         alt="">
+
+
                 </div>
             </div>
-            <div>
-                <div id="carta-maquina" class="carta"><img
-                        src="https://www.alura.com.br/assets/img/imersoes/dev-2021/card-super-trunfo-transparent-ajustado.png"
-                        style=" width: inherit; height: inherit; position: absolute;"></div>
-            </div>
         </div>
-        <button data-btnJogar class="button-jogar" type="button" id="btnJogar" onclick="jogar()" disabled=>Jogar</button>
-        <div id="resultado"></div>
+        <button data-btnJogar class="button-jogar -intativo" type="button" id="btnJogar" onclick="jogar()" disabled>Jogar</button>
+        <div class="resultado-final" data-resultado hidden></div>
     </form>
 
 

@@ -17,7 +17,8 @@ function adivinhar() {
 
     if(btnVerifica.innerText === 'Iniciar'){
         var tentativas = parseInt(document.querySelector('[data-chances]').textContent)
-        var numeroSecreto = parseInt(Math.random() * 10)
+        var numeroSecreto = Math.floor(Math.random() * 10)
+        console.log(numeroSecreto)
 
         document.querySelector('[data-numeroSecreto]').textContent = (numeroSecreto.toString())
     }else {
@@ -58,6 +59,7 @@ function reiniciar(){
     document.querySelector('[data-chute]').value = ''
     document.querySelector('[data-chances]').textContent = '3'
     document.querySelector('[data-mensagem]').textContent = ''
-    document.querySelector('[data-btnadivinha]').innerText = 'Iniciar.'
+    document.querySelector('[data-btnadivinha]').innerText = 'Iniciar'
+
 }
 
