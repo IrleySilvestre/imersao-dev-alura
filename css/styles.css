@@ -1,12 +1,3 @@
-/*body {*/
-/*    font-family: 'Roboto Mono', monospace;*/
-/*    color: #ffffff;*/
-/*    min-height: 400px;*/
-/*    background-color: #000000;*/
-/*    background-size: 100vh;*/
-/*    background-position: center bottom;*/
-/*    background-repeat: no-repeat;*/
-/*}*/
 .body-aula1 {
     font-family: 'Roboto Mono', monospace;
     color: #ffffff;
@@ -31,6 +22,20 @@
     height: 100vh;
     min-height: 400px;
     /*background-image: url("../img/quadra-tennis.png");*/
+    background-position: center;
+    background-color: #21544b;
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-attachment: fixed;
+}
+
+.body-aula8 {
+    font-family: 'Roboto Mono', monospace;
+    text-align: center;
+    color: #333533;
+    height: 100vh;
+    min-height: 400px;
+    background-image: url("https://wallpaperaccess.com/full/22924.jpg");
     background-position: center;
     background-color: #21544b;
     background-repeat: no-repeat;
@@ -64,6 +69,9 @@
     font-weight: bold;
     color: #ffffff;
     margin: 5px 0 5px;
+}
+.page-title.-m{
+    color: #AAAAAA;
 }
 
 .page-subtitle {
@@ -491,6 +499,13 @@
 
 }
 
+.placar-jogo{
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 7px;
+}
+
 .button-jogar:hover{
     transform: scale(1.05);
 }
@@ -519,6 +534,8 @@
     background-color: #333533;
     padding: 20px;
     border-radius: 10px;
+    height: 550px;
+    width: 380px;
 }
 .carta{
     display: flex;
@@ -535,18 +552,22 @@
 }
 
 .imagem-logo{
-    width: 350px;
+    margin-top: 50px;
+    width: 330px;
     height: 400px;
     border-radius: 10px;
     padding: 10px;
+    box-shadow:5px 5px 5px #333533 ;
+
 }
 .imagem-interrogacao{
+    margin-top: 50px;
     position: absolute;
-    width: 350px;
+    width: 330px;
     height: 400px;
     border-radius: 10px;
     padding: 10px;
-    opacity: .15;
+    opacity: 0.10;
 }
 .nome-jogador {
     font-size: 1.5rem;
@@ -557,9 +578,13 @@
 
 .carta-imagem{
     box-sizing: border-box;
-    margin-top: 10px;
-    height: 60%;
-    width: 100%;
+    border-radius: 4px;
+    box-shadow:5px 5px 5px #333533 ;
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 65%;
+    width: 80%;
 }
 
 /*.carta-imagem.-jogador{*/
@@ -570,34 +595,22 @@
 /*    background-position-y: 10px;*/
 /*}*/
 
-.atributos-jogador{
+.atributos-carta{
     border: 2px solid #333533 ;
     border-radius: 4px;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    margin-top: 25px;
-    width: 100%;
-    height: 25%;
-}
-.atributos-maquina{
-    border: 2px solid #333533 ;
-    border-radius: 4px;
-    display: flex;
-    flex-direction: column;
-    align-content: flex-start;
+    align-items: flex-start;
     justify-content: space-around;
     margin-top: 25px;
     width: 100%;
     height: 25%;
 }
 
-/*.input-radio{*/
+.atributos-carta > p{
+    margin-left: 10px;
+}
 
-/*    margin-top: 15%;*/
-
-/*}*/
 
 .resultado-final {
     color: white;
@@ -606,6 +619,6 @@
     font-weight: bolder;
     padding: 1rem;
     border: 2px solid black;
-    background-color: black;
+    background-color: #333533;
 }
 

@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="../css/reset.css">
-    <title>Super Trunfo</title>
+    <title>Magic Trunfo</title>
 
 </head>
-<body class="body-aula6">
+<body class="body-aula8">
 <header>
 
     <div>
@@ -30,24 +30,26 @@
 </header>
 
 <main class="container-main-tabela">
-    <h1 class="page-title">Super Trunfo</h1>
+    <h1 class="page-title -m">Magic Trunfo</h1>
 
     <button  data-btnSortear class="button-jogar -intativo" onclick="sortearCarta()" id="btnSortear">Sortear carta</button>
+    <div class="placar-jogo" data-placar> </div>
 
     <form class="formCartas" id="form">
         <div class="wrapper">
             <div data-cartaJogador class="carta-borda">
                 <p class="titulo-carta">Jogador</p>
-
-                 <img class="imagem-logo" src="../img/fireboll-tennis.png"
-                     alt="">
+                <div class="carta -jogador">
+                    <img class="imagem-logo" src="../img/reliquias-potter.png" alt="">
+                </div>
             </div>
 
             <div>
                 <div data-cartaMaquina class="carta-borda">
                     <p class="titulo-carta">Maquina</p>
-                    <img class="imagem-logo" src="../img/fireboll-tennis.png"
-                         alt="">
+                    <div class="carta -jogador">
+                        <img class="imagem-logo" src="../img/reliquias-potter.png" alt="">
+                    </div>
 
 
                 </div>
@@ -59,6 +61,6 @@
 
 
 </main>
-<script src="../js/aula7-superTrunfo.js"></script>
+<script src="../js/magic-trunfo.js"></script>
 </body>
 </html>
