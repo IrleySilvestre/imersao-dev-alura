@@ -605,6 +605,8 @@
     margin-top: 25px;
     width: 100%;
     height: 25%;
+    background-color: #95d3ea;
+    font-weight: bold;
 }
 
 .atributos-carta > p{

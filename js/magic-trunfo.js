@@ -7,7 +7,7 @@ var carta1 = {
         coragem: 95,
         magia: 80
     },
-    foto: 'https://i.pinimg.com/236x/dd/0c/d7/dd0cd716a704887cb6bd7dc4e8b512ca--harry-potter-world-laser.jpg'
+    foto: '../img/harry-potter.jpg'
 }
 
 var carta2 = {
@@ -17,7 +17,7 @@ var carta2 = {
         coragem: 80,
         magia: 65
     },
-    foto: 'http://3.bp.blogspot.com/-H9OX168nDls/TmgRnEFdqnI/AAAAAAAAALo/gXP6MEwRYBY/s1600/rony.jpg'
+    foto: '../img/rony.jpg'
 }
 
 var carta3 = {
@@ -27,7 +27,7 @@ var carta3 = {
         coragem: 70,
         magia: 90
     },
-    foto: 'https://i.pinimg.com/originals/b1/6f/77/b16f77135f494ef36e651c8e4167bd20.jpg'
+    foto: '../img/Ginny-Weasley.jpg'
 }
 
 var carta4 = {
@@ -37,7 +37,7 @@ var carta4 = {
         coragem: 80,
         magia: 75
     },
-    foto: 'https://www.magazine-hd.com/apps/wp/wp-content/uploads/2016/11/harry-potter-top-snape.jpg'
+    foto: '../img/severus-snape.jpg'
 }
 
 var carta5 = {
@@ -47,7 +47,7 @@ var carta5 = {
         coragem: 80,
         magia: 75
     },
-    foto: 'https://static.wikia.nocookie.net/harrypotter/images/d/d5/Hermione_Scarf_TDH.png'
+    foto: '../img/hermione-granger.png'
 }
 
 var carta6 = {
@@ -57,7 +57,7 @@ var carta6 = {
         coragem: 75,
         magia: 70
     },
-    foto: 'https://i.pinimg.com/originals/1b/90/3f/1b903f4eaf31a94850d8684133722d79.jpg'
+    foto: '../img/Luna-Lovegood.jpg'
 }
 
 var carta7 = {
@@ -67,7 +67,7 @@ var carta7 = {
         coragem: 80,
         magia: 100
     },
-    foto: 'https://i.pinimg.com/originals/cf/b1/22/cfb12295e252a4e49f9cbc2d2303d6a4.jpg'
+    foto: '../img/alvos-dumbledore.jpg'
 }
 
 var carta8 = {
@@ -78,7 +78,7 @@ var carta8 = {
         coragem: 60,
         magia: 70
     },
-    foto: 'https://i.pinimg.com/originals/03/3d/4d/033d4d829a721ba5093d8b496c774d32.jpg'
+    foto: '../img/draco-malfoy.jpg'
 }
 
 
@@ -89,7 +89,7 @@ var carta9 = {
         coragem: 90,
         magia: 95
     },
-    foto: 'https://i.pinimg.com/736x/40/90/93/409093e8f8118e554f81ea37ddc47766.jpg'
+    foto: '../img/gellet-frindewald.jpg'
 }
 
 var carta10 = {
@@ -99,7 +99,7 @@ var carta10 = {
         coragem: 95,
         magia: 90
     },
-    foto: 'https://i.pinimg.com/originals/31/71/46/3171460f7c6cd8cdca19aacae0e0ca46.jpg'
+    foto: '../img/lord-voldemort.jpg'
 }
 
 var carta11 = {
@@ -109,7 +109,7 @@ var carta11 = {
         coragem: 75,
         magia: 85
     },
-    foto: 'https://i.pinimg.com/originals/31/60/f0/3160f0669cbdf7b07cdce1bfc8e87e5d.jpg'
+    foto: '../img/minerva-mcgonagall.jpg'
 }
 
 var carta12 = {
@@ -119,7 +119,7 @@ var carta12 = {
         coragem: 85,
         magia: 10
     },
-    foto: 'https://pm1.narvii.com/6360/567a2053de25d31d513c2e356366c91efb5a96c7_hq.jpg'
+    foto: '../img/hubeus-hagrid.jpg'
 }
 
 var carta13 = {
@@ -129,7 +129,7 @@ var carta13 = {
         coragem: 65,
         magia: 60
     },
-    foto: 'http://pm1.narvii.com/6433/0a49f6bd15103354ca6b1d568e57a6b3cdcb5344_00.jpg'
+    foto: '../img/neville-longbottom.jpg'
 }
 
 var carta14 = {
@@ -139,7 +139,7 @@ var carta14 = {
         coragem: 90,
         magia: 70
     },
-    foto: 'https://i.pinimg.com/736x/88/b8/40/88b8405cf8e86b3d049354dc56140d2e.jpg'
+    foto: '../img/bellatrix-lestrange.jpg'
 }
 
 var carta15 = {
@@ -149,7 +149,7 @@ var carta15 = {
         coragem: 90,
         magia: 80
     },
-    foto: 'https://pbs.twimg.com/profile_images/1367298406687858688/hkSfXiGH.jpg'
+    foto: '../img/fred-weasley.jpg'
 }
 
 var carta16 = {
@@ -159,7 +159,7 @@ var carta16 = {
         coragem: 90,
         magia: 80
     },
-    foto: 'https://64.media.tumblr.com/a4ae60aeb5bd172282f9edb4f0bb24ed/c319f8bc3c1f50a7-50/s400x600/709c2d09b18a4673eef1d962a1a0a2a2a874fa53.png'
+    foto: '../img/george-weasley.png'
 }
 
 
@@ -236,7 +236,7 @@ function exibeCarta(carta, jogador) {
                         </div>
                         <div>
                             <input data-atributo type="radio" id="atributo" name="atributo" value="magia">
-                            <label for="magia"> Magia: ${carta.atributos.coragem}</label>
+                            <label for="magia"> Magia: ${carta.atributos.magia}</label>
                         </div>
                     </div>
                 </div>
