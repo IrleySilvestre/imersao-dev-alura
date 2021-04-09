@@ -33,24 +33,34 @@
     <h1 class="page-title -m">Magic Trunfo</h1>
 
     <button  data-btnSortear class="button-jogar -intativo" onclick="sortearCarta()" id="btnSortear">Sortear carta</button>
-    <div class="placar-jogo" data-placar> </div>
 
     <form class="formCartas" id="form">
         <div class="wrapper">
             <div data-cartaJogador class="carta-borda">
-                <p class="titulo-carta">Jogador</p>
+
+                <div data-pontuacao-jogador class="titulo-carta">
+                    <p>Cartas</p>
+                    <p >Jogador</p>
+                    <p>Pontos = 0</p>
+                </div>
+
                 <div class="carta -jogador">
                     <img class="imagem-logo" src="../img/reliquias-potter.png" alt="">
                 </div>
             </div>
 
             <div>
-                <div data-cartaMaquina class="carta-borda">
-                    <p class="titulo-carta">Maquina</p>
+                <div data-cartaMaquina  class="carta-borda">
+
+                    <div data-pontuacao-maquina class="titulo-carta">
+                        <p >Cartas</p>
+                        <p >Computador</p>
+                        <p >Pontos = 0</p>
+                    </div>
+
                     <div class="carta -jogador">
                         <img class="imagem-logo" src="../img/reliquias-potter.png" alt="">
                     </div>
-
 
                 </div>
             </div>

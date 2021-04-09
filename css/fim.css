@@ -1,0 +1,39 @@
+.body-fim{
+    background-color: #495057;
+    text-align: center;
+    color: #ffffff;
+}
+.container-fim{
+    background-color: #11495b;
+    width: 55%;
+    height: 55%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+
+}
+
+.container-fim-img{
+
+    border-radius: 50%;
+}
+.img-thanks{
+    width: 200px;
+    height: 200px;
+}
+.section-list {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    font-weight: bold;
+    font-size: 1rem;
+    text-align: left;
+    padding-left: 25px;
+}
+.agradecimento{
+    padding-bottom:  25px;
+}
+.imagem-logo{
+    display: flex;
+    justify-content: space-between;
+}
