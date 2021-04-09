@@ -1,208 +1,254 @@
-var cartas = []
+var cartas = [
 
-var carta1 = {
-    nome: "Harry Potter",
-    atributos: {
-        inteligencia: 75,
-        coragem: 95,
-        magia: 80
+    carta1 = {
+        nome: "Harry Potter",
+        atributos: {
+            inteligencia: 75,
+            coragem: 95,
+            magia: 80
+        },
+        foto: '../img/harry-potter.jpg'
     },
-    foto: 'https://i.pinimg.com/236x/dd/0c/d7/dd0cd716a704887cb6bd7dc4e8b512ca--harry-potter-world-laser.jpg'
-}
 
-var carta2 = {
-    nome: "Ron Weasley",
-    atributos: {
-        inteligencia: 65,
-        coragem: 80,
-        magia: 65
+    carta2 = {
+        nome: "Ron Weasley",
+        atributos: {
+            inteligencia: 65,
+            coragem: 80,
+            magia: 65
+        },
+        foto: '../img/rony.jpg'
     },
-    foto: 'http://3.bp.blogspot.com/-H9OX168nDls/TmgRnEFdqnI/AAAAAAAAALo/gXP6MEwRYBY/s1600/rony.jpg'
-}
 
-var carta3 = {
-    nome: "Ginny Weasley",
-    atributos: {
-        inteligencia: 80,
-        coragem: 70,
-        magia: 90
+    carta3 = {
+        nome: "Ginny Weasley",
+        atributos: {
+            inteligencia: 80,
+            coragem: 70,
+            magia: 90
+        },
+        foto: '../img/Ginny-Weasley.jpg'
     },
-    foto: 'https://i.pinimg.com/originals/b1/6f/77/b16f77135f494ef36e651c8e4167bd20.jpg'
-}
 
-var carta4 = {
-    nome: "Severus Snape",
-    atributos: {
-        inteligencia: 70,
-        coragem: 80,
-        magia: 75
+    carta4 = {
+        nome: "Severus Snape",
+        atributos: {
+            inteligencia: 70,
+            coragem: 80,
+            magia: 75
+        },
+        foto: '../img/severus-snape.jpg'
     },
-    foto: 'https://www.magazine-hd.com/apps/wp/wp-content/uploads/2016/11/harry-potter-top-snape.jpg'
-}
 
-var carta5 = {
-    nome: "Hermione Granger",
-    atributos: {
-        inteligencia: 90,
-        coragem: 80,
-        magia: 75
+    carta5 = {
+        nome: "Hermione Granger",
+        atributos: {
+            inteligencia: 90,
+            coragem: 80,
+            magia: 75
+        },
+        foto: '../img/hermione-granger.png'
     },
-    foto: 'https://static.wikia.nocookie.net/harrypotter/images/d/d5/Hermione_Scarf_TDH.png'
-}
 
-var carta6 = {
-    nome: "Luna Lovegood",
-    atributos: {
-        inteligencia: 60,
-        coragem: 75,
-        magia: 70
+    carta6 = {
+        nome: "Luna Lovegood",
+        atributos: {
+            inteligencia: 60,
+            coragem: 75,
+            magia: 70
+        },
+        foto: '../img/Luna-Lovegood.jpg'
     },
-    foto: 'https://i.pinimg.com/originals/1b/90/3f/1b903f4eaf31a94850d8684133722d79.jpg'
-}
 
-var carta7 = {
-    nome: "Alvos Dumbledore",
-    atributos: {
-        inteligencia: 90,
-        coragem: 80,
-        magia: 100
+    carta7 = {
+        nome: "Alvos Dumbledore",
+        atributos: {
+            inteligencia: 90,
+            coragem: 80,
+            magia: 100
+        },
+        foto: '../img/alvos-dumbledore.jpg'
     },
-    foto: 'https://i.pinimg.com/originals/cf/b1/22/cfb12295e252a4e49f9cbc2d2303d6a4.jpg'
-}
 
-var carta8 = {
+    carta8 = {
 
-    nome: "Draco Malfoy",
-    atributos: {
-        inteligencia: 55,
-        coragem: 60,
-        magia: 70
+        nome: "Draco Malfoy",
+        atributos: {
+            inteligencia: 55,
+            coragem: 60,
+            magia: 70
+        },
+        foto: '../img/draco-malfoy.jpg'
     },
-    foto: 'https://i.pinimg.com/originals/03/3d/4d/033d4d829a721ba5093d8b496c774d32.jpg'
-}
 
 
-var carta9 = {
-    nome: "Gellet Grindewald",
-    atributos: {
-        inteligencia: 90,
-        coragem: 90,
-        magia: 95
+    carta9 = {
+        nome: "Gellet Grindewald",
+        atributos: {
+            inteligencia: 90,
+            coragem: 90,
+            magia: 95
+        },
+        foto: '../img/gellet-frindewald.jpg'
     },
-    foto: 'https://i.pinimg.com/736x/40/90/93/409093e8f8118e554f81ea37ddc47766.jpg'
-}
 
-var carta10 = {
-    nome: "Lord Voldemort",
-    atributos: {
-        inteligencia: 70,
-        coragem: 95,
-        magia: 90
+    carta10 = {
+        nome: "Lord Voldemort",
+        atributos: {
+            inteligencia: 70,
+            coragem: 95,
+            magia: 90
+        },
+        foto: '../img/lord-voldemort.jpg'
     },
-    foto: 'https://i.pinimg.com/originals/31/71/46/3171460f7c6cd8cdca19aacae0e0ca46.jpg'
-}
 
-var carta11 = {
-    nome: "Minerva McGonagall",
-    atributos: {
-        inteligencia: 85,
-        coragem: 75,
-        magia: 85
+    carta11 = {
+        nome: "Minerva McGonagall",
+        atributos: {
+            inteligencia: 85,
+            coragem: 75,
+            magia: 85
+        },
+        foto: '../img/minerva-mcgonagall.jpg'
     },
-    foto: 'https://i.pinimg.com/originals/31/60/f0/3160f0669cbdf7b07cdce1bfc8e87e5d.jpg'
-}
 
-var carta12 = {
-    nome: "Hubeus Hagrid",
-    atributos: {
-        inteligencia: 75,
-        coragem: 85,
-        magia: 10
+    carta12 = {
+        nome: "Hubeus Hagrid",
+        atributos: {
+            inteligencia: 75,
+            coragem: 85,
+            magia: 10
+        },
+        foto: '../img/hubeus-hagrid.jpg'
     },
-    foto: 'https://pm1.narvii.com/6360/567a2053de25d31d513c2e356366c91efb5a96c7_hq.jpg'
-}
 
-var carta13 = {
-    nome: "Neville Longbottom",
-    atributos: {
-        inteligencia: 60,
-        coragem: 65,
-        magia: 60
+    carta13 = {
+        nome: "Neville Longbottom",
+        atributos: {
+            inteligencia: 60,
+            coragem: 65,
+            magia: 60
+        },
+        foto: '../img/neville-longbottom.jpg'
     },
-    foto: 'http://pm1.narvii.com/6433/0a49f6bd15103354ca6b1d568e57a6b3cdcb5344_00.jpg'
-}
 
-var carta14 = {
-    nome: "Bellatrix Lestrange",
-    atributos: {
-        inteligencia: 50,
-        coragem: 90,
-        magia: 70
+    carta14 = {
+        nome: "Bellatrix Lestrange",
+        atributos: {
+            inteligencia: 50,
+            coragem: 90,
+            magia: 70
+        },
+        foto: '../img/bellatrix-lestrange.jpg'
     },
-    foto: 'https://i.pinimg.com/736x/88/b8/40/88b8405cf8e86b3d049354dc56140d2e.jpg'
-}
 
-var carta15 = {
-    nome: "Fred Weasley",
-    atributos: {
-        inteligencia: 85,
-        coragem: 90,
-        magia: 80
+    carta15 = {
+        nome: "Fred Weasley",
+        atributos: {
+            inteligencia: 85,
+            coragem: 90,
+            magia: 80
+        },
+        foto: '../img/fred-weasley.jpg'
     },
-    foto: 'https://pbs.twimg.com/profile_images/1367298406687858688/hkSfXiGH.jpg'
-}
 
-var carta16 = {
-    nome: "George Weasley",
-    atributos: {
-        inteligencia: 85,
-        coragem: 90,
-        magia: 80
-    },
-    foto: 'https://64.media.tumblr.com/a4ae60aeb5bd172282f9edb4f0bb24ed/c319f8bc3c1f50a7-50/s400x600/709c2d09b18a4673eef1d962a1a0a2a2a874fa53.png'
-}
+    carta16 = {
+        nome: "George Weasley",
+        atributos: {
+            inteligencia: 85,
+            coragem: 90,
+            magia: 80
+        },
+        foto: '../img/george-weasley.png'
+    }
+]
 
+var cartaMaquina = []
+var cartaJogador = []
 
-cartas.push(carta1, carta2, carta3, carta4, carta5, carta6, carta7, carta8, carta9, carta10, carta11, carta12, carta13, carta14, carta15, carta16)
-
-var cartaMaquina
-var cartaJogador
+var cartaSelecionadaJogador = []
+var cartaSelecionadaMaquina = []
+var numeroCartaMaquina = 0
+var numeroCartaJogador = 0
 var pontosJogador = 0
 var pontosMaquina = 0
+
 
 var btnSortear = document.querySelector('[data-btnSortear]')
 var btnJogar = document.querySelector('[data-btnJogar]')
 btnJogar.style.opacity = '0.15'
 
+distribuirCartas()
 
-function atualizarPlacar(){
-    var divPlacar = document.querySelector('[data-placar]')
-    var htmlPlacar = `Jogador ${pontosJogador}    / ${pontosMaquina} Computador`
-    divPlacar.innerHTML = htmlPlacar
+function atualizarPlacar() {
+    var divPontosJogador = document.querySelector('[data-pontuacao-jogador]')
+    var divPontosMaquina = document.querySelector('[data-pontuacao-maquina]')
+    var htmlPontos = ` 
+                    <p>Cartas = ${cartaJogador.length}</p>
+                    <p >Jogador</p>
+                    <p>Pontos = ${pontosJogador}</p>
+                    `
+
+    var htmlPontuacaoMaquina = ` 
+                    <p>Cartas = ${cartaMaquina.length}</p>
+                    <p>Computador</p>
+                    <p>Pontos = ${pontosMaquina}</p>
+                    `
+    divPontosJogador.innerHTML = htmlPontos
+    divPontosMaquina.innerHTML = htmlPontuacaoMaquina
 }
 
 
+function distribuirCartas() {
+    let i = 0
+    while (i < cartas.length) {
+        var cartaSorteada = parseInt(Math.random() * cartas.length)
+        if (cartaJogador.length === cartaMaquina.length) {
+            cartaJogador.push(cartas[cartaSorteada])
+            cartas.splice(cartaSorteada, 1)
+        } else {
+            cartaMaquina.push(cartas[cartaSorteada])
+            cartas.splice(cartaSorteada, 1)
+        }
+
+    }
+    atualizarPlacar()
+}
+
 
 function sortearCarta() {
+    if(btnSortear.value === 'Jogar novamente'){
+        document.location.reload(true)
+        // cartaJogador = []
+        // cartaMaquina = []
+        // pontosMaquina = 0
+        // pontosJogador = 0
+        // btnSortear.value = ''
+        // distribuirCartas()
+    }
+
     var divCartaMaquina = document.querySelector('[data-cartaMaquina]')
     var htmlDiv = `   
-        <p class="titulo-carta">Maquina</p>
-        <div class="carta -jogador">
-            <img class="imagem-interrogacao" src="../img/img.png" alt="">
-            <img class="imagem-logo" src="../img/reliquias-potter.png"">
-        </div>
+                <div data-pontuacao-maquina class="titulo-carta">
+                    <p>Cartas = ${cartaMaquina.length}</p>
+                    <p >Computador</p>
+                    <p>Pontos = ${pontosMaquina}</p>
+                </div>
+                <div class="carta -jogador">
+                    <img class="imagem-interrogacao" src="../img/img.png" alt="">
+                    <img class="imagem-logo" src="../img/reliquias-potter.png"">
+                </div>
 
-        `
+            `
     divCartaMaquina.innerHTML = htmlDiv
 
-    var numeroCartaMaquina = parseInt(Math.random() * 16)
-    cartaMaquina = cartas[numeroCartaMaquina]
+    numeroCartaMaquina = parseInt(Math.random() * cartaMaquina.length)
+    cartaSelecionadaMaquina = cartaMaquina[numeroCartaMaquina]
 
-    var numeroCartaJogador = parseInt(Math.random() * 16)
-    while (numeroCartaJogador == numeroCartaMaquina) {
-        numeroCartaJogador = parseInt(Math.random() * 16)
-    }
-    cartaJogador = cartas[numeroCartaJogador]
+    numeroCartaJogador = parseInt(Math.random() * cartaJogador.length)
+    cartaSelecionadaJogador = cartaJogador[numeroCartaJogador]
+
+
     document.querySelector('[data-btnSortear]').disabled = true
     document.querySelector('[data-btnJogar]').disabled = false
     document.querySelector('[data-resultado]').hidden = true
@@ -211,7 +257,8 @@ function sortearCarta() {
     btnJogar.style.opacity = '1.00'
 
 
-    exibeCarta(cartaJogador, 'jogador')
+    exibeCarta(cartaSelecionadaJogador, 'jogador')
+
 }
 
 
@@ -219,7 +266,11 @@ function exibeCarta(carta, jogador) {
     if (jogador === 'jogador') {
         var divJogador = document.querySelector('[data-cartaJogador]')
         var html = `
-                <p class="titulo-carta">Jogador</p>
+                <div data-pontuacao-jogador class="titulo-carta">
+                    <p>Cartas = ${cartaJogador.length}</p>
+                    <p >Jogador</p>
+                    <p>Pontos = ${pontosJogador}</p>
+                </div>
                 <div class="carta -jogador">
                     <h3 class="nome-jogador jogador"> ${carta.nome} </h3>
                     <img class="carta-imagem" src="${carta.foto}"
@@ -236,7 +287,7 @@ function exibeCarta(carta, jogador) {
                         </div>
                         <div>
                             <input data-atributo type="radio" id="atributo" name="atributo" value="magia">
-                            <label for="magia"> Magia: ${carta.atributos.coragem}</label>
+                            <label for="magia"> Magia: ${carta.atributos.magia}</label>
                         </div>
                     </div>
                 </div>
@@ -245,7 +296,11 @@ function exibeCarta(carta, jogador) {
     } else {
         var divJogador = document.querySelector('[data-cartaMaquina]')
         var html = `
-                <p class="titulo-carta">Computador</p>
+                <div data-pontuacao-maquina class="titulo-carta">
+                    <p>Cartas = ${cartaMaquina.length}</p>
+                    <p >Computador</p>
+                    <p>Pontos = ${pontosMaquina}</p>
+                </div>
                 <div class="carta -jogador">
                     <h3 class="nome-jogador jogador"> ${carta.nome} </h3>
                     <img class="carta-imagem" src="${carta.foto}"
@@ -267,7 +322,6 @@ function exibeCarta(carta, jogador) {
 
 function obtemAtributoSelecionado() {
     var radioAtributo = document.getElementsByName('atributo')
-    console.log(radioAtributo)
     for (var i = 0; i < radioAtributo.length; i++) {
         if (radioAtributo[i].checked) {
             return radioAtributo[i].value
@@ -279,16 +333,29 @@ function jogar() {
     var divResultado = document.querySelector('[data-resultado]')
     var atributoSelecionado = obtemAtributoSelecionado()
 
-    if (cartaJogador.atributos[atributoSelecionado] > cartaMaquina.atributos[atributoSelecionado]) {
+    if (cartaSelecionadaJogador.atributos[atributoSelecionado] > cartaSelecionadaMaquina.atributos[atributoSelecionado]) {
         htmlResultado = '<p class="resultado-final">Jogador Venceu</p>'
+        cartaMaquina.splice(numeroCartaMaquina, 1)
         pontosJogador++
-    } else if (cartaJogador.atributos[atributoSelecionado] < cartaMaquina.atributos[atributoSelecionado]) {
+        if (cartaMaquina.length === 0){
+            htmlResultado = '<p class="resultado-final">Jogador Venceu - Fim de jogo</p>'
+            btnSortear.value = 'Jogar novamente'
+            btnSortear.innerText = 'Jogar novamente'
+        }
+
+    } else if (cartaSelecionadaJogador.atributos[atributoSelecionado] < cartaSelecionadaMaquina.atributos[atributoSelecionado]) {
         htmlResultado = '<p class="resultado-final">Computador Venceu</p>'
+        cartaJogador.splice(numeroCartaJogador, 1)
         pontosMaquina++
+        if(cartaJogador.length === 0){
+            htmlResultado = '<p class="resultado-final">Computador Venceu - Fim de jogo</p>'
+            btnSortear.value = 'Jogar novamente'
+            btnSortear.innerText = 'Jogar novamente'
+        }
+
     } else {
         htmlResultado = '<p class="resultado-final">Empatou</p>'
     }
-
 
     divResultado.innerHTML = htmlResultado
     document.querySelector('[data-btnSortear]').disabled = false
@@ -296,6 +363,8 @@ function jogar() {
     divResultado.hidden = false
     btnSortear.style.opacity = '1.00'
     btnJogar.style.opacity = '0.15'
-    exibeCarta(cartaMaquina, '')
+
+    exibeCarta(cartaSelecionadaMaquina, '')
+    atualizarPlacar()
 }
 
